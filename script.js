@@ -1,11 +1,26 @@
 // NOTE: PLEASE READ EACH INSTRUCTION COMMENT CAREFULLY TO HELP YOU PROCESS THIS PROJECT
 // IF YOU ARE STUCK ASK AN INSTRUCTOR FOR HELP, ALWAYS WRITE THE CODE BELOW THE ASSIGNMENTS.
-
+console.error("Hello! I am an Error! Fix me if you Dare!");
 productArray = [];
 function addProduct() {
-  // Assignment 1
+  let input = document.getElementById("product").value;
+
+
+//Assignment One 
+const newDiv = document.createElement("div");
+newDiv.textContent = "This is a new div element.";
+newDiv.innerHTML = "<h2> Hello!</h2><p>This is a new div created using JavaScript.</p>";
+newDiv.id = "myNewDiv";
+newDiv.classList.add("myClass");
+newDiv.classList.add("anotherClass");
+document.body.appendChild(newDiv);
+const parentElement = document.getElementById("output");
+if (parentElement) {
+  parentElement.appendChild(newDiv);
+}
+
+
   // You need to change the id that this collects to product.
-  let input = document.getElementById("input").value;
   // You will need to create a div using javascript,
   // Use this site to help you understand how: https://www.w3schools.com/jsref/met_document_createelement.asp
 
@@ -21,11 +36,33 @@ function addProduct() {
   // If you do not know the alert method, look it up on google using the w3schools,
   // do not forget to include a return false at the end to not reload your webpage.
 
+
+  //Assignment Two
+
+
+
   // Assignment 2:
   // You need to put the value of the input into an array to call later.
   // That means you will need to assign your input using brackets around it
   // to a newProduct variable, remember that assign can mean the equals sign(=).
+  const product= [Hammer, Nail, Screwdriver, Wrench, Pliers];
   let newProduct = { input };
+
+
+//   Example of A loop to create a list:
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// let fLen = fruits.length;
+
+// let text = "<ul>";
+// for (let i = 0; i < fLen; i++) {
+//   text += "<li>" + fruits[i] + "</li>";
+// }
+// text += "</ul>";
+
+
+
+
+
   // Hint: You could push your product to a new array once you create a new variable
   // that makes a single object {} with the product variable you made above.
   // Please look up how to use push on an array here: https://www.w3schools.com/jsref/jsref_push.asp

@@ -58,8 +58,15 @@ function addProduct() {
   // use console.log and pass in the product array to check if you have it setup correctly.
   // console.log(productArray)
 
+  // for (let i = 0; i < productArray.length; i++) {
+  //   const productDiv = document.createElement("div");
+  //   productDiv.textContent = productArray[i].name;
+  //   document.getElementById("output").appendChild(productDiv);
+  // }
+
   //Assignment Three
 
+//Assignment 3:
 
   // Hint: Use a loop(look up the javascript loop on w3schools.) on your product array and set the max length of the loop to the array using
   // dot notation (array.length) and then you do the following:

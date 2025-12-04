@@ -5,20 +5,19 @@ productArray = [];
 function addProduct() {
   let input = document.getElementById("product").value;
 
-
-//Assignment One 
-const newDiv = document.createElement("div");
-newDiv.textContent = "This is a new div element.";
-newDiv.innerHTML = "<h2> Hello!</h2><p>This is a new div created using JavaScript.</p>";
-newDiv.id = "myNewDiv";
-newDiv.classList.add("myClass");
-newDiv.classList.add("anotherClass");
-document.body.appendChild(newDiv);
-const parentElement = document.getElementById("output");
-if (parentElement) {
-  parentElement.appendChild(newDiv);
-}
-
+  //Assignment One
+  const newDiv = document.createElement("div");
+  newDiv.textContent = "This is a new div element.";
+  newDiv.innerHTML =
+    "<h2> Hello!</h2><p>This is a new div created using JavaScript.</p>";
+  newDiv.id = "myNewDiv";
+  newDiv.classList.add("myClass");
+  newDiv.classList.add("anotherClass");
+  document.body.appendChild(newDiv);
+  const parentElement = document.getElementById("output");
+  if (parentElement) {
+    parentElement.appendChild(newDiv);
+  }
 
   // You need to change the id that this collects to product.
   // You will need to create a div using javascript,
@@ -36,40 +35,32 @@ if (parentElement) {
   // If you do not know the alert method, look it up on google using the w3schools,
   // do not forget to include a return false at the end to not reload your webpage.
 
-
   //Assignment Two
 
-
+  let newProduct = { name: input };
+  productArray.push(newProduct);
+  console.log(productArray);
+  const product = ['Hammer', 'Nail', 'Screwdriver', 'Wrench', 'Pliers'];
+  let aLen = Array.length;
+  let text = "<ul>";
+  for (let i = 0; i < aLen; i++) {
+    text += "<li>" + product[i] + "</li>";
+  }
+  text += "</ul>";
 
   // Assignment 2:
   // You need to put the value of the input into an array to call later.
   // That means you will need to assign your input using brackets around it
   // to a newProduct variable, remember that assign can mean the equals sign(=).
-  const product= [Hammer, Nail, Screwdriver, Wrench, Pliers];
-  let newProduct = { input };
-
-
-//   Example of A loop to create a list:
-// const fruits = ["Banana", "Orange", "Apple", "Mango"];
-// let fLen = fruits.length;
-
-// let text = "<ul>";
-// for (let i = 0; i < fLen; i++) {
-//   text += "<li>" + fruits[i] + "</li>";
-// }
-// text += "</ul>";
-
-
-
-
-
   // Hint: You could push your product to a new array once you create a new variable
   // that makes a single object {} with the product variable you made above.
   // Please look up how to use push on an array here: https://www.w3schools.com/jsref/jsref_push.asp
   // use console.log and pass in the product array to check if you have it setup correctly.
   // console.log(productArray)
 
-  // Assignment 3:
+  //Assignment Three
+
+
   // Hint: Use a loop(look up the javascript loop on w3schools.) on your product array and set the max length of the loop to the array using
   // dot notation (array.length) and then you do the following:
   //

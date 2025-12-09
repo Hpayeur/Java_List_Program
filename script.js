@@ -41,7 +41,7 @@ function addProduct() {
   productArray.push(newProduct);
   console.log(productArray);
   const product = ['Hammer', 'Nail', 'Screwdriver', 'Wrench', 'Pliers'];
-  let aLen = Array.length;
+  let aLen = product.length;
   let text = "<ul>";
   for (let i = 0; i < aLen; i++) {
     text += "<li>" + product[i] + "</li>";
@@ -58,13 +58,46 @@ function addProduct() {
   // use console.log and pass in the product array to check if you have it setup correctly.
   // console.log(productArray)
 
+
+
+  // Examples:
   // for (let i = 0; i < productArray.length; i++) {
   //   const productDiv = document.createElement("div");
   //   productDiv.textContent = productArray[i].name;
   //   document.getElementById("output").appendChild(productDiv);
   // }
+//const myInput = document.getElementById('myInputId'); 
+// myInput.value = "";
+//output.style.display = "block";
+// const products = [
+//     { name: "Laptop", price: 999 },
+//     { name: "Phone", price: 499 },
+//     { name: "Tablet", price: 299 }
+// ];
+// const productListDiv = document.getElementById("product-list");
+// for (let i = 0; i < products.length; i++) {
+//     const currentProduct = products[i];
+//     const productDiv = document.createElement("div");
+//     productDiv.textContent = `Index ${i}: ${currentProduct.name} - $${currentProduct.price}`;
+//     productListDiv.appendChild(productDiv)
 
-  //Assignment Three
+//Assignment Three
+const myInput = document.getElementById("product");
+myInput.value = "";
+const output = document.getElementById("output");
+output.style.display = "block";
+for (let i = 0; i < productArray.length; i++) {
+  const productDiv = document.createElement("div");
+  productDiv.textContent = `Index ${i}: ${productArray[i].name}`;
+  output.appendChild(productDiv);
+}
+const products = [
+  { name: "Hammer", price: "22.97" },
+  { name: "Nail", price: "3.49" },
+  { name: "Screwdriver", price: "2.49" },
+  { name: "Wrench", price: "5.99" },
+  { name: "Pliers", price: "7.49" }
+];
 
 //Assignment 3:
 
